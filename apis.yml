@@ -1,7 +1,29 @@
 aid: conteller
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/conteller.png
 name: Conteller
-description: Conteller is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Conteller is a user-generated content (UGC) marketplace where brands pay for
+  authentic media directly from their own customers and everyday, non-famous
+  creators. Brands publish media briefs and the platform lets creators capture,
+  submit, and store photos, videos, and TikTok-style content, then handles
+  paying those creators for approved submissions. A Mexican/Spanish startup
+  (Madrid) selected for Batch 19 of 500 Global's Somos Lucha accelerator program
+  in Latin America, Conteller has run pilots spanning roughly 1,400 creators and
+  a dozen brands. It was added to the API Evangelist network as a portfolio lead
+  of 500 Global. As of this profile the public site is a disabled Vercel
+  deployment and no public developer portal, API, or documentation surface has
+  been found.
 url: https://raw.githubusercontent.com/api-evangelist/conteller/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- User Generated Content
+- Content Marketing
+- Creator Economy
+- Marketing
+- Media
+- Startup
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/conteller-domain-security.yml
 - type: Website
   url: https://conteller.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
