@@ -1,0 +1,42 @@
+generated: '2026-08-10'
+method: probed
+source: live probe of https://conteller.com/.well-known/*
+host: https://conteller.com
+documents:
+- path: /.well-known/security.txt
+  status: 402
+  content_type: text/plain; charset=utf-8
+  file: null
+- path: /.well-known/openid-configuration
+  status: 402
+  content_type: text/plain; charset=utf-8
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 402
+  content_type: text/plain; charset=utf-8
+  file: null
+- path: /.well-known/oauth-protected-resource
+  status: 402
+  content_type: text/plain; charset=utf-8
+  file: null
+- path: /.well-known/api-catalog
+  status: 402
+  content_type: text/plain; charset=utf-8
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 402
+  content_type: text/plain; charset=utf-8
+  file: null
+- path: /.well-known/agent-card.json
+  status: 402
+  content_type: text/plain; charset=utf-8
+  file: null
+- path: /.well-known/agent.json
+  status: 402
+  content_type: text/plain; charset=utf-8
+  file: null
+note: >-
+  Every /.well-known/ path returns HTTP 402 'Payment required / DEPLOYMENT_DISABLED' — the
+  conteller.com origin is a Vercel deployment that has been disabled, so the host answers 402
+  for every path including the site root. No well-known document is served, so NO WellKnown or
+  SecurityTxt pointer is emitted in apis.yml: this file records a verified absence, not a presence.
