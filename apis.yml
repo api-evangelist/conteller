@@ -56,7 +56,6 @@ tags:
 - Creator Economy
 - Marketing
 - Media
-- Startups
 tags_raw:
 - Company
 - User Generated Content
@@ -64,7 +63,6 @@ tags_raw:
 - Creator Economy
 - Marketing
 - Media
-- Startup
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -102,3 +100,7 @@ x-coverage:
   - url: https://admin.conteller.com/
     status: 522
   checked: '2026-08-10'
+x-tags-removed:
+- Startups
+x-company-stage: startup
+x-company-stage-evidence: "own tags: Startup"
